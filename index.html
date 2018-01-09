@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Wikipedia Viewer</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <button class="btn btn-default btn-sm pull-right" id="lang-button">En&rarr;Ru</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search-text" placeholder="Search" data-togge="popover" data-content="Please enter some text"
+                            data-trigger="manual" data-placement="bottom">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary" id="search-button">Go!</button>
+                            <!-- <a href="" class="btn btn-default">Get random article</a> -->
+                            <button type="button" class="btn btn-default" id="random-button">Get random article</button>
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <div class="row" id="search-result">
+
+
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-default pull-right hidden" id="continue-button">More...</button>
+                </div>
+                <div class="row text-center hidden" id="search-progress">
+                    <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy;
+                <a href="https://www.freecodecamp.org/konstbessonov" target="_blank">Konst Bessonov</a>, 2018. Me on
+                <a href="https://github.com/KonstBessonov/wikipedia-viewer" target="_blank">GitHub</a>.</p>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/localize.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
